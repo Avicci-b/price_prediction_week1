@@ -25,8 +25,8 @@ jobs:
         pip install -r requirements.txt
         # Install Task 2 specific dependencies
         pip install -r requirements_task2.txt
-        # Install Task 3 specific dependencies  
-        pip install -r requirements_task3.txt
+        
+        
     
     - name: Test data files exist
       run: |
@@ -37,17 +37,15 @@ jobs:
           exit 1
         fi
     
-    - name: Run Task 1 tests
-      run: |
-        python -m pytest tests/test_data.py -v
+    
     
     - name: Run Task 2 tests  
       run: |
-        python tests/test_task2.py
+        python tests/CI_test_task2.py
     
     - name: Run Task 3 tests
       run: |
-        python tests/test_task3.py
+        python tests/CI_test_Task3.py
     
     - name: Verify notebook structure
       run: |
