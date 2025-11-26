@@ -1,0 +1,20 @@
+# Sentiment Analysis
+textblob==0.17.1
+vaderSentiment==3.3.2  # Specifically designed for social/media text
+
+# Statistical Analysis
+scipy>=1.0.0
+statsmodels>=0.14.0
+
+# Existing dependencies (keep all previous)
+TA-Lib==0.4.28
+pynance==1.0.0
+yfinance==0.2.18
+pandas>=2.0.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+nltk>=3.7
+scikit-learn>=1.0.0
+pytest>=7.0.0
+jupyter>=1.0.0
